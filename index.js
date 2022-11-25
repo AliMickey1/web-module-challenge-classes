@@ -51,7 +51,7 @@ class Person {
     this.stomach = [];
   }
   eat(someFood){
-    if(this.stomach <= 10)
+    if(this.stomach.length <= 10)
     {
       this.stomach.push(someFood);
     }
@@ -96,12 +96,13 @@ class Car {
   }
   drive(distance)
   {
-    this.odometer = this.odometer + distance;
-    this.tank = 1/distance * this.milesPerGallon;
-    if(this.tank == 0)
+    if(this.tank < 1)
     {
       return `I ran out of fuel at ${odometer} miles`;
     }
+    this.odometer = this.odometer + distance;
+    this.tank = (1/distance * this.milesPerGallon) + this.tank;
+   
   }
 
 }
