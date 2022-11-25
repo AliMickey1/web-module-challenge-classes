@@ -126,7 +126,7 @@ class Car {
 */
 
 class Lambdasian {
-  constructor (name, age, location)
+  constructor ({name, age, location})
   {
     this.name = name;
     this.age = age;
@@ -154,7 +154,10 @@ class Lambdasian {
 */
 
 class Instructor {
+  constructor(specialty, favLanguage, catchPhrase)
+  {
 
+  }
 }
 
 /*
