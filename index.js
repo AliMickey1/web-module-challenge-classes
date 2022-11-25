@@ -51,7 +51,7 @@ class Person {
     this.stomach = [];
   }
   eat(someFood){
-    if(this.stomach.length <= 10)
+    if(this.stomach.length < 10)
     {
       this.stomach.push(someFood);
     }
@@ -126,9 +126,18 @@ class Car {
 */
 
 class Lambdasian {
-  
-}
+  constructor (name, age, location)
+  {
+    this.name = name;
+    this.age = age;
+    this.location = location;
+  }
+  speak()
+  {
+    return `Hello my name is ${this.name}, I am from ${this.location}`;
+  }
 
+}
 /*
   TASK 4
     - Write an Instructor class extending Lambdasian.
