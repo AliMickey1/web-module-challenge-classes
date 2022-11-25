@@ -55,8 +55,8 @@ class Person {
     {
       this.stomach.push(someFood);
     }
-    else{
-      console.log('I am full!');
+    else if (this.stomach.length > 10){
+      return;
     }
   }
   poop()
