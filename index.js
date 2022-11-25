@@ -204,7 +204,7 @@ class Student extends Lambdasian {
   {
     return `${this.name} has submitted a PR for ${subject}`;
   }
-  sprintChallenge()
+  sprintChallenge(subject)
   {
     return `${this.name} has begun sprint challenge on ${subject}`;
   }
@@ -232,7 +232,7 @@ class ProjectManager extends Instructor {
     this.gradClassName = gradClassName;
     this.favInstructor = favInstructor;
    }
-   standup(channel)
+   standUp(channel)
    {
     return `${this.name} announces to ${channel}, @channel standy times!`;
    }
